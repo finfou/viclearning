@@ -1,0 +1,9 @@
+Today when I try to pull&push form/to github repo, get an strange error:
+
+fatal: unable to access 'http://github.com/finfou/viclearning/': Recv failure: Connection was reset
+
+At first, I thought it's a connection problem, maybe banned by GWF, but at the same time, I can still open github in browser.
+
+Quit for a while, suddenly, I realized the problem could be the force of https usage. So came to .git directory and replaced repo's url form http to https in gitconfig.
+
+Now the pull & push worked again!
